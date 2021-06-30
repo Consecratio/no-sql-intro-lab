@@ -13,9 +13,24 @@ Fork and clone this repository and answer questions as you research directly in 
 
 # Questions:
 1. What does the term noSQL refer to, and what other term is often used synonymously with noSQL?
+    - Refers to - Non relational databases OR Not only SQL OR Non SQL
 2. What are some of the common arguments for using a non-relational versus a relational db?
+    - Very useful for fast paced development
+    - Easy to structure and evolve NoSQL DBs
+    - Easy to scale with large amounts of data.
 3. In this class we will be using the document style of non-relational databases. What are the charecteristics of a document based db? 
-4. In this class we will be using Mongo specificially as our no-SQL db. Look into Mongo and answer this question: what is the priamry difference between how Mongo is maintained vrs SQL?
+    - Documents store or encapsulate and encode data in a standard format or encoding. (XML, YAML, JSON, and BinarySON)
+    - Documents are not required to adhere to a standard schema, nor will they have the same sections, slots, parts, or keys.
+    - Not all fields are required.
+4. In this class we will be using Mongo specificially as our no-SQL db. Look into Mongo and answer this question: what is the priamry difference between how Mongo is maintained vs SQL?
+    - SQL is structured and strict, but Mongo/NoSQL isn't which allows for more versatility.
+    - Mongo stores documents with data (XML, YAML, JSON, and BinarySON)
 5. Mongo DBs are organized into documents. Describe an example of a table in SQL that contains users, and then describe the equivalent DB setup in Mongo. 
+    - A table in SQL that contains users would contain a column for UserName, Password, Email, FirstName, LastName, etc.
+    - A similar setup in Mongo would be stored as an object similar to JSON { "userName": "", "password": "", "email": "", "firstName": "", "lastName": "" }
 6. What is an example situation where a Mongo database makes sense versus a non-relational db?
-
+    - When your program is going to add more functionality down the line.
+    - When you need data to change over time or quickly.
+    - When you're not concerned about data consistency or integrity. (Things can change)
+    - When inputs can change datatypes, or when you have large amounts of data.
+    - When your data needs to scale up, down or any direction.
